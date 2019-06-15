@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп BORODINSKY</title>
+    <link href="styles/normalize.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
@@ -89,11 +92,10 @@
         <section class="catalog">
             <h2 class="visually-hidden">Список средств для ухода</h2>
             <ul class="catalog-list">
-
                 <li class="catalog-item">
                     <a href="item.html">
                         <h3>
-                            <span class="catalog-category">Набор для путешествий</span>
+                            <span class="catalog-category">Набор для путешествий</span><br>
                             <span class="catalog-item-title">«Baxter of California»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -101,7 +103,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>8900P</b>
+                        <span class="price">8900 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -109,7 +111,7 @@
                 <li class="catalog-item">
                     <a href="#">
                         <h3>
-                            <span class="catalog-category">Гель для волос</span>
+                            <span class="catalog-category">Гель для волос</span><br>
                             <span class="catalog-item-title">«American crew»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -117,7 +119,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>2500P</b>
+                        <span class="price">2500 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -125,7 +127,7 @@
                 <li class="catalog-item">
                     <a href="#">
                         <h3>
-                            <span class="catalog-category">Глина для укладки волос</span>
+                            <span class="catalog-category">Глина для укладки волос</span><br>
                             <span class="catalog-item-title">«American crew»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -133,7 +135,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>1700P</b>
+                        <span class="price">1900 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -141,7 +143,7 @@
                 <li class="catalog-item">
                     <a href="#">
                         <h3>
-                            <span class="catalog-category">Гель для волос</span>
+                            <span class="catalog-category">Гель для волос</span><br>
                             <span class="catalog-item-title">«Suavecito»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -149,7 +151,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>1800P</b>
+                        <span class="price">1700 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -157,7 +159,7 @@
                 <li class="catalog-item">
                     <a href="#">
                         <h3>
-                            <span class="catalog-category">Увлажняющий кондиционер</span>
+                            <span class="catalog-category">Увлажняющий кондиционер</span><br>
                             <span class="catalog-item-title">«Baxter of California»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -165,7 +167,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>3800P</b>
+                        <span class="price">2900 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -173,7 +175,7 @@
                 <li class="catalog-item">
                     <a href="#">
                         <h3>
-                            <span class="catalog-category">Набор для бритья</span>
+                            <span class="catalog-category">Набор для бритья</span><br>
                             <span class="catalog-item-title">«Baxter of California»</span>
                         </h3>
                         <p class="catalog-item-image">
@@ -181,7 +183,7 @@
                         </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>8700P</b>
+                        <span class="price">6900 ₽</span>
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
@@ -200,7 +202,7 @@
         <p class="footer-contacts">
             Барбершоп BORODINSKY<br>
             Адрес: Санкт-Петербург, Казанская ул. , 28<br>
-            <a href="index.html#wide-map">Как нас найти?</a><br>
+            <a class="search-us" href="index.html#wide-map">Как нас найти?</a><br>
             Телефон: +7(812)111-00-22
         </p>
         <div class="foter-social">

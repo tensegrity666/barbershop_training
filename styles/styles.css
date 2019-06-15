@@ -1,0 +1,247 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    background-color: #000000;
+    background-image: url(/img/background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-footer .search-us {
+    color: #ffffff;
+}
+
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    
+    background-color: #000000;
+}
+
+.site-navigation,
+.user-navigation,
+.appointment-item {
+    list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    color: #000000;
+    
+    background-color: #f8f5f2;
+    background-image: url(/img/items-background.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery-content {
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.button {
+    font: inherit;
+    
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+    background-color: #000000;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+.appointment-item input {
+    font: inherit;
+    
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+    border-color: #663d15;
+    outline: none;            
+}
+
+.main-footer {
+    color: #ffffff;
+    
+    background-color: #212121;
+    background-image: url(/img/footer-background.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-contacts {
+    text-align: left;
+}
+
+.foter-social {
+    text-align: center;
+}
+
+.foter-social ul {
+    list-style: none;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.modal {
+    color: #000000;
+    
+    background-color: #f8f3f0;
+    background-image: url(/img/items-background.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.login-form .login-icon-user,
+.login-form .login-icon-password {
+    font: inherit;
+    text-transform: uppercase;
+    color: #000000;
+    
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+
+.login-form .login-icon-user:focus,
+.login-form .login-icon-password:focus {
+     border-color: #663d15;
+    outline: none; 
+}
+
+.login-list {
+    list-style: none;
+}
+
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+    text-decoration: none;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+
+/* страница catalog.html */
+
+.inner-page {
+    color: #000000;
+    
+    background-color: #f8f5f2;
+    background-image: url(/img/items-background.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.inner-page .main-navigation a {
+    color: #ffffff;
+}
+
+.inner-page a {
+    color: #000000;
+}
+
+.inner-page .button {
+    color: #ffffff;
+}
+
+.catalog-list {
+    color: #000000;
+    
+    list-style: none;
+}
+
+.pagination-list {
+   list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+}
+
+.product-photos ul {
+    list-style: none;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.pagination-item a:focus,
+.pagination-item a:active {
+    color: #663d15;
+    outline: none;
+}
