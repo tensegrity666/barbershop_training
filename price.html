@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
   <header class="main-header">
       <nav class="main-navigation">
           <a class="main-header-logo">
@@ -26,7 +26,7 @@
           </ul>
       </nav>
 <!-- Навигация по ветке товаров -->
-      <ul class="shop-navigation">
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a>Прайс-лист</a></li>
       </ul>
@@ -43,9 +43,9 @@
             <li class="brand-list-item">Malin-Goetz</li>
         </ul>
       </section>
-      <section class="price">
+      <section class="pricelist">
           <h2>Прайс-лист</h2>
-          <table border="0">
+          <table>
               <caption>Цены на услуги наших мастеров:</caption>
                 <tr><td>Царское бритьё</td><td>2000P</td></tr>
                 <tr><td>Стрижка бороды</td><td>1700P</td></tr>
@@ -61,24 +61,28 @@
              Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
       </section>
   </main>
+  
   <footer class="main-footer">
-      <p class="footer-contacts">
-          Барбершоп BORODINSKY<br>
-          Адрес: Санкт-Петербург, Казанская ул. , 28<br>
-          <a href="map.html">Как нас найти?</a><br>
-          Телефон: +7(812)111-00-22
-      </p>
-      <div class="foter-social">
-          <b>Давайте дружить!</b>
-          <a href="#" class="social-button">Вконтакте</a>
-          <a href="#" class="social-button">Facebook</a>
-          <a href="#" class="social-button">Instagram</a>
-      </div>
-      <p class="copyright">
-          <b>Разработано:</b>
-          <a href="#" class="button">TNSGRTY666</a>
-      </p>
-  </footer>
+        <section class="footer-contacts">
+            <h3 class="visually-hidden">Наш адрес</h3>
+            Барбершоп BORODINSKY<br>
+            Адрес: Санкт-Петербург, Казанская ул., д. 28<br>
+            <a href="#wide-map">Как нас найти?</a><br>
+            Телефон: +7(812)111-00-22
+        </section>
+        <div class="foter-social">
+            <b>Давайте дружить!</b>
+            <ul>
+               <li><a href="#" class="social-button">Вконтакте</a></li>
+                <li><a href="#" class="social-button">Facebook</a></li>
+                <li><a href="#" class="social-button">Instagram</a></li>
+            </ul>
+        </div>
+        <p class="copyright">
+            <b>Разработано:</b>
+            <a href="#" class="button">TNSGRTY666</a>
+        </p>
+    </footer>
 </body>
 
 </html>
