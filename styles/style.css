@@ -1,17 +1,16 @@
-
 body {
     margin: 0;
     padding: 0;
-    
+
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    
+
     background-color: #000000;
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/backgrounds/background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -19,6 +18,17 @@ body {
 a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-footer .search-us {
@@ -30,7 +40,7 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    
+
     background-color: #000000;
 }
 
@@ -62,9 +72,9 @@ a {
 
 .index-columns {
     color: #000000;
-    
+
     background-color: #f8f5f2;
-    background-image: url(/img/items-background.jpg);
+    background-image: url(../img/backgrounds/items-background.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -89,12 +99,12 @@ a {
 
 .button {
     font: inherit;
-    
+
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
-    
+
     background-color: #000000;
     border: none;
 }
@@ -107,21 +117,21 @@ a {
 
 .appointment-item input {
     font: inherit;
-    
+
     background-color: transparent;
     border: 2px solid #000000;
 }
 
 .appointment-item input:focus {
     border-color: #663d15;
-    outline: none;            
+    outline: none;
 }
 
 .main-footer {
     color: #ffffff;
-    
+
     background-color: #212121;
-    background-image: url(/img/footer-background.jpg);
+    background-image: url(../img//backgrounds/footer-background.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -149,9 +159,9 @@ a {
 
 .modal {
     color: #000000;
-    
+
     background-color: #f8f3f0;
-    background-image: url(/img/items-background.jpg);
+    background-image: url(../img//backgrounds/items-background.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -161,7 +171,7 @@ a {
     font: inherit;
     text-transform: uppercase;
     color: #000000;
-    
+
     background-color: #f9f6f3;
     border: 2px solid #000000;
 }
@@ -169,7 +179,7 @@ a {
 .login-form .login-icon-user:focus,
 .login-form .login-icon-password:focus {
      border-color: #663d15;
-    outline: none; 
+    outline: none;
 }
 
 .login-list {
@@ -195,9 +205,9 @@ a {
 
 .inner-page {
     color: #000000;
-    
+
     background-color: #f9f6f3;
-    background-image: url(/img/items-background.jpg);
+    background-image: url(../img//backgrounds/items-background.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -307,9 +317,9 @@ a {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    
+
     background-color: #e5e5e5;
-    
+
 }
 
 .catalog-item-price .button {
@@ -336,7 +346,7 @@ a {
 
 .product-photo li {
     list-style: none;
-    
+
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -354,4 +364,6 @@ a {
     list-style: none;
 }
 
-
+.modal-map-wide img {
+    color: #000000;
+}
