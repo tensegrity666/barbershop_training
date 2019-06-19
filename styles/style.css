@@ -20,6 +20,11 @@ a {
     color: #ffffff;
 }
 
+
+li {
+    list-style: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -35,19 +40,12 @@ a {
     color: #ffffff;
 }
 
-
 .main-navigation {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
 
     background-color: #000000;
-}
-
-.site-navigation,
-.user-navigation,
-.appointment-item {
-    list-style: none;
 }
 
 .site-navigation a:hover,
@@ -57,15 +55,11 @@ a {
     background-color: #242424;
 }
 
-.features-list {
-    list-style: none;
-}
-
 .feature-item {
     text-align: center;
 }
 
-.feature-item h3 {
+h3 {
     font-size: 30px;
     line-height: 42px;
 }
@@ -145,12 +139,12 @@ a {
     text-align: left;
 }
 
-.foter-social {
+.footer-social {
     text-align: center;
 }
 
-.foter-social ul {
-    list-style: none;
+.footer-social li a {
+    color: #ffffff;
 }
 
 .copyright {
@@ -180,10 +174,6 @@ a {
 .login-form .login-icon-password:focus {
      border-color: #663d15;
     outline: none;
-}
-
-.login-list {
-    list-style: none;
 }
 
 .restore {
@@ -225,14 +215,6 @@ a {
     text-decoration: underline;
 }
 
-.catalog-list {
-    list-style: none;
-}
-
-.pagination-list {
-   list-style: none;
-}
-
 .catalog-item {
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -249,14 +231,6 @@ a {
 
 .catalog-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.product-photos ul {
-    list-style: none;
-}
-
-.breadcrumbs {
-    list-style: none;
 }
 
 .breadcrumbs a:hover,
@@ -327,9 +301,6 @@ a {
     color: #ffffff;
 }
 
-
-
-
 .pagination-item-current a {
     color: #000000;
     background-color: #ffffff;
@@ -358,10 +329,6 @@ a {
 .product-info h3 {
     font-size: 24px;
     line-height: 30px;
-}
-
-.product-info ul {
-    list-style: none;
 }
 
 .modal-map-wide img {
