@@ -311,8 +311,18 @@ body {
   background-repeat: repeat;
 }
 
+.inner-header-logo {
+  margin: 17px;
+} 
+
+.inner-page .main-navigation {
+  height: 70px;
+  background-color: #000000;  
+}
+
 .inner-page .main-navigation a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .inner-page a {
