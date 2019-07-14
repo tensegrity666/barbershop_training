@@ -14,13 +14,25 @@ body {
   background-repeat: no-repeat;
 }
 
-.visually-hidden {
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+  
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -80,7 +92,6 @@ body {
 
 .site-navigation {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   flex-basis: 620px;
   margin: 0;
@@ -88,19 +99,47 @@ body {
   list-style: none;
 }
 
-.site-navigation li,
-.user-navigation li {
-  margin-right: 10px;
-  padding: 20px 0;
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 25px 20px;
 }
 
 .user-navigation {
   display: flex;
-  align-items: flex-end;
-  width: 60px;
+  flex-wrap: wrap;
+  max-width: 140px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  
+  width: 16px;
+  height: 18px;
+  
+  background-image: url("../img/icons/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:active::before,
+.login-link:focus::before {
+opacity: 1;
 }
 
 /*features*/
@@ -122,9 +161,35 @@ body {
   text-align: center;
 }
 
-.feature-item p {
+.feature-item h3 {
+  position: relative;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
+  
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+  
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+  
+  width: 20px;
+  height: 20px;
+  
+  background-color: #ffffff;
+  
+  transform: rotate(45deg);
+  
+}
+
+.feature-item p {
+  margin: 0 10px;
 }
 
 /*columns*/
@@ -144,6 +209,7 @@ body {
 
 .index-columns h2 {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 30px;
   line-height: 42px;
@@ -155,19 +221,14 @@ body {
 
 .news {
   width: 380px;
-
-  text-align: left;
-}
-
-.news-item p {
-  margin: 20px 0 5px 0;
-  padding: 0;
+  margin: 0;
 }
 
 .news-list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0;
+  
   list-style: none;
 }
 
@@ -214,6 +275,9 @@ body {
 }
 
 .button {
+  display: inline-block;
+  padding: 10px 30px;
+  
   font: inherit;
 
   text-align: center;
@@ -382,7 +446,9 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.catalog-item h3 {
+.inner-page .catalog-item h3 {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 18px;
 }
@@ -582,4 +648,8 @@ body {
 /*альт текст на карте*/
 .modal-map-wide img {
   color: #000000;
+}
+
+button {
+  
 }
