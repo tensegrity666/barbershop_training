@@ -203,9 +203,11 @@ opacity: 1;
 
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url(../img/backgrounds/items-background.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: 
+    url(../img/backgrounds/line.png),
+    url(../img/backgrounds/items-background.jpg);
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
@@ -296,8 +298,7 @@ opacity: 1;
 .button.disabled,
 .button:disabled {
   cursor: default;
-  opacity: 0.5;
-  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .gallery-button {
@@ -778,7 +779,7 @@ opacity: 1;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   
   z-index: 2;
-  display: none;
+/*  display: none;*/
 }
 
 .modal-overlay {
@@ -927,7 +928,7 @@ opacity: 1;
 }
 
 .login-checkbox:hover {
-  color: #663d15;
+/*  color: #663d15;*/
 }
 
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -966,6 +967,14 @@ opacity: 1;
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
+}
+
+.login-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.3;
+}
+
+.login-checkbox input[type="checkbox"]:disabled ~ .remember-me {
+  opacity: 0.3;
 }
 
 .login-form .button {
