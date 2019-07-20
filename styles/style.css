@@ -53,7 +53,7 @@ input[type="radio"].visually-hidden {
 
 
 .main-header {
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 }
 
 .main-navigation {
@@ -149,7 +149,7 @@ opacity: 1;
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   padding: 0;
 }
 
@@ -157,17 +157,18 @@ opacity: 1;
   list-style: none;
 }
 
-.feature-item {
-  min-width: 300px;
+.feature-item p {
   text-align: center;
+  margin: 0;
+  padding: 0 20px 0 10px;
 }
 
 .feature-item h3 {
   position: relative;
   margin: 0;
   margin-bottom: 60px;
-  padding: 0;
   
+  text-align: center;
   font-size: 30px;
   line-height: 42px;
 }
@@ -176,9 +177,9 @@ opacity: 1;
   content: "";
   
   position: absolute;
-  bottom: -30px;
+  bottom: -32px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -20px;
   
   width: 20px;
   height: 20px;
@@ -189,17 +190,14 @@ opacity: 1;
   
 }
 
-.feature-item p {
-  margin: 0 10px;
-}
 
 /*columns*/
 
 .index-columns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
-  padding: 50px 80px;
+  margin-bottom: 39px;
+  padding: 45px 80px;
 
   color: #000000;
   background-color: #f8f5f2;
@@ -210,8 +208,8 @@ opacity: 1;
 
 .index-columns h2 {
   margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
+  margin-bottom: 23px;
+  padding: 0 2px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -227,18 +225,19 @@ opacity: 1;
 
 .news-list {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding: 0;
   
   list-style: none;
 }
 
 .news-item time {
+  padding: 5px;
   text-transform: none;
 }
 
 .news-item {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .news-item p {
@@ -257,6 +256,7 @@ opacity: 1;
 }
 
 .gallery-content img {
+  object-fit: cover;
   width: 286px;
   height: 164px;
 }
@@ -316,6 +316,8 @@ opacity: 1;
 }
 
 .contacts {
+  margin: 0;
+  padding: 0;
   width: 380px;
 }
 
@@ -331,7 +333,7 @@ opacity: 1;
 }
 
 .contacts .worktime {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .appointment {
@@ -354,7 +356,7 @@ opacity: 1;
 
 .appointment-item label {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   margin-left: 15px;
 }
 
@@ -365,7 +367,7 @@ opacity: 1;
 .appointment-item input {
   box-sizing: border-box;
   width: 140px;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-left: 15px;
   padding-bottom: 7px;
   padding-right: 15px;
@@ -384,7 +386,7 @@ opacity: 1;
 .appointment .button {
   width: 100%;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 /*footer*/
