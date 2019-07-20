@@ -754,18 +754,17 @@ opacity: 1;
   font-size: 24px;
   line-height: 30px;
 }
+.social-button li{
+  list-style: none;
+}
+
+/*modal*/
 
 /*альт текст на карте*/
 .modal-map-wide img {
   color: #000000;
 }
 
-.social-button li{
-  list-style: none;
-}
-
-
-/*modal*/
 
 .modal {
   position: fixed;
@@ -778,7 +777,22 @@ opacity: 1;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   
-/*  display: none;*/
+  z-index: 2;
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  background: rgba(0, 0, 0, 0.8);
+  
+  z-index: 1;
+  
+  display: none;
 }
 
 .login-form ul {
@@ -795,6 +809,8 @@ opacity: 1;
   width: 300px;
   padding: 50px 80px;
   margin-left: -230px;
+  
+  display: none;
 }
 
 .modal-login h2 {
@@ -865,7 +881,6 @@ opacity: 1;
 .login-form .login-icon-user:focus,
 .login-form .login-icon-password:focus {
   border-color: #663d15;
-  outline: none;
 }
 
 .login-icon-user {
@@ -968,5 +983,7 @@ opacity: 1;
   transform: translate(-50%, -50%);
   
   border: 7px solid #ffffff;
+  
+  display: none;
 }
 
