@@ -1,3 +1,4 @@
+html, 
 body {
   min-width: 970px;
   margin: 0;
@@ -236,15 +237,82 @@ opacity: 1;
   text-transform: none;
 }
 
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
+}
+
 .gallery {
   width: 300px;
 }
 
 .gallery-content {
+  height: 164px;
   margin: 0;
-  padding: 0;
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-container {
+  position: relative;
+  
+  height: 260px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  margin-right: 16px;
+  padding: 10px 30px;
+  
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #ffffff;
+}
+
+.gallery-button {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
 }
 
 .contacts {
@@ -270,33 +338,40 @@ opacity: 1;
   width: 300px;
 }
 
+.appointment-form ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.appointment-item {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
 .appointment li {
   list-style: none;
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 30px;
+.appointment-item input {
+  box-sizing: border-box;
+  width: 140px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  padding-right: 15px;
   
   font: inherit;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #000000;
-  border: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #663d15;
-}
-
-.appointment-item input {
-  font: inherit;
+  
   background-color: transparent;
   border: 2px solid #000000;
 }
@@ -304,6 +379,12 @@ opacity: 1;
 .appointment-item input:focus {
   border-color: #663d15;
   outline: none;
+}
+
+.appointment .button {
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
 }
 
 /*footer*/
@@ -337,15 +418,74 @@ opacity: 1;
   width: 160px;
 }
 
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-social li a {
   color: #ffffff;
+}
+
+.footer-social b {
+  display: block;
+  
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  
+  background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
 }
 
 .copyright {
   width: 150px;
   margin: 0;
   margin-left: auto;
-  padding: 0;
+}
+
+.copyright .button {
+  color: #ffffff;
+}
+
+.copyright .button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.copyright .button {
+  box-sizing: border-box;
+  width: 140px;
+}
+
+.copyright b {
+  display: block;
+  
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .inner-page .main-footer {
@@ -575,9 +715,15 @@ opacity: 1;
 }
 
 .catalog-item-price b {
+  display: inline-block;
+  margin: 0;
+  margin-right: -10px;
+  padding: 10px 30px;
+
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  vertical-align: middle;
   background-color: #e5e5e5;
 }
 
@@ -650,6 +796,6 @@ opacity: 1;
   color: #000000;
 }
 
-button {
-  
+.social-button li{
+  list-style: none;
 }
