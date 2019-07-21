@@ -512,6 +512,7 @@ opacity: 1;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
+  
   background-color: #000000;
 }
 
@@ -535,6 +536,27 @@ opacity: 1;
 .inner-page .main-navigation a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current::after {
+  content: "";
+  
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  
+  height: 5px;
+  
+  background-color: #ffffff;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: #242424;
 }
 
 .inner-page a {
@@ -995,4 +1017,3 @@ opacity: 1;
   
   display: none;
 }
-
