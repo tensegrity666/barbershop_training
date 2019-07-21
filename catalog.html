@@ -39,55 +39,82 @@
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Магазин</a></li>
-            <li class="breadcrumbs-current">Средства для ухода</li>
+            <li class="breadcrumbs-current"><a>Средства для ухода</a></li>
         </ul>
         <div class="catalog-columns">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
-                    <legend>Производители:</legend>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
-                            <label for="filter-baxter-of-california"> Baxter of California</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty" >
-                            <label for="filter-mr-natty">Mr Natty</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito">
-                            <label for="filter-suavecito">Suavecito</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
-                            <label for="filter-malin-goetz">Malin Goetz</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
-                            <label for="filter-murrays">Murray's</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew">
-                            <label for="filter-american-crew">American Crew</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                <div class="filter-container">
+                  <fieldset>
+
+                      <legend>Производители:</legend>
+                      <ul>
+                          <li class="filter-option">
+                              <label class="brand-item">Baxter of California 
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
+                              <span class="checkbox-indicator"></span>
+                              </label>
+                          </li>
+                          <li class="filter-option">
+                              <label class="brand-item">Mr Natty
+
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                              <span class="checkbox-indicator"></span>
+                              </label>
+                          </li>
+                          <li class="filter-option">
+                              <label class="brand-item">Suavecito
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito">
+                              <span class="checkbox-indicator"></span>
+                              </label>
+
+                          </li>
+                          <li class="filter-option">
+                              <label class="brand-item">Malin Goetz
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                                <span class="checkbox-indicator"></span>
+                              </label>
+                          </li>
+                          <li class="filter-option">
+                              <label class="brand-item">Murray's
+
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+                              <span class="checkbox-indicator"></span>
+                              </label>
+                          </li>
+                          <li class="filter-option">
+                              <label class="brand-item">American Crew
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew">
+                                <span class="checkbox-indicator"></span>
+                              </label>
+                              
+                          </li>
+                      </ul>
+
+                  </fieldset>
+                </div>
+                
                 <fieldset>
                     <legend>Группы товаров:</legend>
                     <ul>
                         <li class="filter-option">
+                            <label class="group-item">Бритвенные принадлежности
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-shave" value="shaving">
-                            <label for="filter-shave">Бритвенные принадлежности</label>
+                            <span class="radio-indicator"></span>
+                            </label>
                         </li>
                         <li class="filter-option">
+                            <label class="group-item">Средства для ухода
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-care" value="hair-care">
-                            <label for="filter-care">Средства для ухода</label>
+                            <span class="radio-indicator"></span>
+                            </label>
                         </li>
                         <li class="filter-option">
+                            <label class="group-item">Аксессуары
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-accessories" value="accessories">
-                            <label for="filter-accessories">Аксессуары</label>
+                            <span class="radio-indicator"></span>
+                            </label>
                         </li>
                     </ul>
                 </fieldset>
@@ -193,6 +220,10 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
+                
+
+                
+                
             </ul>
             <!--        pagination-->
             <ul class="pagination-list">
