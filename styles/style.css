@@ -169,6 +169,7 @@ opacity: 1;
   position: relative;
   margin: 0;
   margin-bottom: 60px;
+  padding: 0;
   
   text-align: center;
   font-size: 30px;
@@ -179,9 +180,10 @@ opacity: 1;
   content: "";
   
   position: absolute;
-  bottom: -32px;
+  top: 50px;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -10px;
+  padding: 0;
   
   width: 20px;
   height: 20px;
@@ -287,6 +289,8 @@ opacity: 1;
   background-color: #000000;
   border: none;
   text-decoration: none;
+  
+  cursor: pointer;
 }
 
 .button:hover,
@@ -573,6 +577,7 @@ opacity: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .inner-page .catalog-item h3 {
   margin: 0;
   padding: 0;
@@ -605,23 +610,23 @@ opacity: 1;
   margin: 0;
   padding: 0;
 }
-.breadcrumbs li {
-  padding-right: 40px;
-}
 
-.breadcrumbs li a::after {
+
+.breadcrumbs li::after {
   content: "";
   
-  position: absolute;
-  top: 8px;
-  left: 65px;
-  
+  display: inline-block;
+  margin: 3px 25px;
   width: 6px;
   height: 6px;
   
   background-color: #000000;
   
   transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
 }
 
 .breadcrumbs li,
@@ -641,6 +646,11 @@ opacity: 1;
   cursor: default;
 }
 
+.breadcrumbs-current a:hover,
+.breadcrumbs-current a:active {
+  text-decoration: none;
+}
+  
 .pricelist td {
   border: 2px solid #000000;
 }
@@ -658,7 +668,10 @@ opacity: 1;
 /*Фильтры*/
 
 .filters {
-  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 220px;
 }
 
 .filters legend {
@@ -687,16 +700,21 @@ opacity: 1;
 
 .filters fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0 auto;
   border: none;
 }
 
+.filters fieldset ul {
+  position: relative;
+}
 
 .filter-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
+  top: 50%;
+  left: 50%;
   
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   
   border: 2px solid #000000;
 }
@@ -710,7 +728,7 @@ opacity: 1;
   top: 6px;
   left: 1px;
   
-  width: 13px;
+  width: 12px;
   height: 2px;
   
   background-color: #000000;
@@ -735,7 +753,7 @@ opacity: 1;
 }
 
 .filter-option #filter-suavecito + .checkbox-indicator {
-  top: 54px;
+  top: 55px;
   left: 0;
 }
 
@@ -750,7 +768,7 @@ opacity: 1;
 }
 
 .filter-option #filter-american-crew + .checkbox-indicator {
-  top: 138px;
+  top: 137px;
   left: 0;
 }
 
@@ -771,6 +789,8 @@ opacity: 1;
 
 .filter-option input[type="radio"] ~ .radio-indicator {
   position: absolute;
+  top: 50%;
+  left: 50%;
   
   width: 14px;
   height: 14px;
@@ -789,22 +809,23 @@ opacity: 1;
   content: "";
   
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
-  width: 1px;
-  height: 1px;
-  
-  border: 3px solid #000000;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
+  
+  background-color: #000000;
 }
 
 .filter-option input[type="radio"]:hover + .radio-indicator::before {
-  border: 3px solid #663d15;
+  background-color: #663d15;
 }
 
 .filter-option #filter-shave + .radio-indicator {
-  top: 1px;
+  top: 0;
   left: 0;
 }
 
@@ -814,7 +835,7 @@ opacity: 1;
 }
 
 .filter-option #filter-accessories + .radio-indicator {
-  top: 73px;
+  top: 72px;
   left: 0;
 }
 
