@@ -66,10 +66,20 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation li {
+  margin: 0;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 20px 20px;
+}
+
+.site-navigation li:hover,
+.site-navigation li:focus,
+.user-navigation li:hover,
+.user-navigation li:focus {
   background-color: #242424;
 }
 
@@ -100,16 +110,9 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.site-navigation a,
-.user-navigation a {
-  display: block;
-  padding: 25px 20px;
-}
-
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
-  max-width: 140px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -117,14 +120,16 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .login-link {
   position: relative;
+  padding: 20px 20px;
   padding-left: 50px;
+  padding-bottom: 30px;
 }
 
 .login-link::before {
   content: "";
 
   position: absolute;
-  top: 27px;
+  top: 22px;
   left: 24px;
 
   width: 16px;
@@ -525,7 +530,6 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header-logo {
-  order: -1;
   width: 111px;
   height: 24px;
   padding: 20px 20px;
@@ -548,8 +552,9 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
+  top: auto;
   right: 20px;
-  bottom: 0;
+  bottom: -2px;
   left: 20px;
 
   height: 5px;
@@ -557,7 +562,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.site-navigation-current a:not([href]) {
+.site-navigation-current {
   background-color: #242424;
 }
 
