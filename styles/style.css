@@ -91,7 +91,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-wrapper {
   width: 100%;
-  min-height: 70px;
   margin-bottom: 60px;
   background-color: #000000;
 }
@@ -122,7 +121,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 20px 20px;
   padding-left: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .login-link::before {
@@ -511,7 +510,6 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-  min-height: 70px;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -550,7 +548,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: auto;
   right: 20px;
-  bottom: -2px;
+  bottom: 0px;
   left: 20px;
 
   height: 5px;
