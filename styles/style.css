@@ -670,7 +670,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
+
   max-width: 300px;
 }
 
@@ -731,7 +731,7 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 2px;
   background-color: #000000;
-  
+
   opacity: 0;
   transition: 0.6s;
 }
@@ -772,7 +772,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   background-color: black;
   border-radius: 50%;
-  
+
   opacity: 0;
   transition: 0.6s;
 }
@@ -788,7 +788,7 @@ input[type="radio"].visually-hidden {
   color: #663d15;
 }
 
-.filter-input-checkbox:focus + .checkbox-indicator, 
+.filter-input-checkbox:focus + .checkbox-indicator,
 .filter-input-checkbox:hover + .checkbox-indicator,
 .filter-input-radio:hover + .radio-indicator,
 .filter-input-radio:focus + .radio-indicator {
@@ -806,8 +806,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-
 .catalog-columns {
   display: flex;
   justify-content: space-between;
@@ -817,43 +815,97 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.catalog {
+  display: flex;
+  max-width: 700px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
-
 
 .catalog-item {
-  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  max-width: 220px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 20px;
   margin-right: 20px;
+
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
 }
+
+.catalog-item a {
+  text-decoration: none;
+}
+
+.catalog-item p,
+.catalog-item h3 {
+  margin: 0;
+  padding: 10px;
+}
+
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.catalog-item-price b {
+.catalog-item img {
+  margin-bottom: 10px;
+}
+
+.price {
   display: inline-block;
+  box-sizing: border-box;
+  width: 114px;
+  height: 40px;
   margin: 0;
-  margin-right: -10px;
-  padding: 10px 30px;
+  margin-right: -5px;
+  padding: 10px 20px;
 
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   vertical-align: middle;
+  color: #000000;
   background-color: #e5e5e5;
 }
 
-.catalog-item-price .button {
-  line-height: 20px;
-  color: #ffffff;
+.catalog-category,
+.catalog-item-title {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  padding-left: 17px;
+  color: #000000;
 }
 
+.catalog-item-title {
+  text-transform: uppercase;
+}
+
+.button-catalog {
+  margin: 0 auto;
+  padding: 10px 23px;
+  line-height: 20px;
+}
+
+.catalog-item-price a {
+  color: #ffffff;
+}
 
 .pagination-list {
   display: flex;
@@ -863,7 +915,6 @@ input[type="radio"].visually-hidden {
 .pagination-list a {
   padding: 15px 20px;
   margin-right: 10px;
-
   color: #ffffff;
   background-color: #000000;
 
