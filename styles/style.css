@@ -693,6 +693,13 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.item-name {
+  cursor: pointer;
+}
+
+.item-name:hover {
+  color: #663d15;
+}
 
 .filter legend {
   margin-bottom: 20px;
@@ -713,8 +720,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid black;
 }
 
-.filter-input-checkbox:checked + .checkbox-indicator::before,
-.filter-input-checkbox:checked + .checkbox-indicator::after {
+.checkbox-indicator::before,
+.checkbox-indicator::after {
   content: "";
 
   position: absolute;
@@ -724,14 +731,19 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 2px;
   background-color: #000000;
+  
+  opacity: 0;
+  transition: 0.6s;
 }
 
 .filter-input-checkbox:checked + .checkbox-indicator::before {
   transform: rotate(45deg);
+  opacity: 1;
 }
 
 .filter-input-checkbox:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
+  opacity: 1;
 }
 
 .radio-indicator {
@@ -749,7 +761,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.filter-input-radio:checked + .radio-indicator::before {
+.radio-indicator::before {
   content: "";
 
   position: absolute;
@@ -760,64 +772,38 @@ input[type="radio"].visually-hidden {
   height: 10px;
   background-color: black;
   border-radius: 50%;
+  
+  opacity: 0;
+  transition: 0.6s;
 }
 
-.filter-item-name {
-  cursor: pointer;
+.filter-input-radio:checked + .radio-indicator::before {
+  opacity: 1;
 }
 
-.item-name:hover {
+.filter-input-checkbox:focus ~ .item-name,
+.filter-input-radio:focus ~ .item-name,
+.checkbox-indicator:hover + .item-name,
+.radio-indicator:hover + .item-name {
   color: #663d15;
 }
 
-.filter-input-checkbox:focus ~ .item-name  {
-  color: #663d15;
-}
-
-.filter-input-checkbox:hover + .checkbox-indicator {
-  color: #663d15;
-  border-color: #663d15;
-}
-
-.filter-input-checkbox:focus + .checkbox-indicator {
-  color: #663d15;
-  border-color: #663d15;
-}
-
-.filter-input-checkbox:checked:focus + .checkbox-indicator::before,
-.filter-input-checkbox:checked:focus + .checkbox-indicator::after {
-  background-color: #663d15;
-}
-
-.filter-input-checkbox:checked:hover + .checkbox-indicator::before,
-.filter-input-checkbox:checked:hover + .checkbox-indicator::after {
-  background-color: #663d15;
-}
-
-.filter-input-radio:focus ~ .item-name  {
-  color: #663d15;
-}
-
-.filter-input-radio:hover + .radio-indicator {
-  color: #663d15;
-  border-color: #663d15;
-}
-
+.filter-input-checkbox:focus + .checkbox-indicator, 
+.filter-input-checkbox:hover + .checkbox-indicator,
+.filter-input-radio:hover + .radio-indicator,
 .filter-input-radio:focus + .radio-indicator {
   color: #663d15;
   border-color: #663d15;
 }
 
+.filter-input-checkbox:checked:focus + .checkbox-indicator::before,
+.filter-input-checkbox:checked:focus + .checkbox-indicator::after,
+.filter-input-checkbox:checked:hover + .checkbox-indicator::before,
+.filter-input-checkbox:checked:hover + .checkbox-indicator::after,
 .filter-input-radio:checked:focus + .radio-indicator::before,
-.filter-input-radio:checked:focus + .radio-indicator::after {
+.filter-input-radio:checked:hover + .radio-indicator::before {
   background-color: #663d15;
 }
-
-.filter-input-radio:checked:hover + .radio-indicator::before,
-.filter-input-radio:checked:hover + .radio-indicator::after {
-  background-color: #663d15;
-}
-
 
 
 
