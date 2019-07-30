@@ -76,8 +76,10 @@
           <figure class="gallery-content">
             <a href="#"><img src="img/content/interier.jpg" width="286" height="164" alt="Фото нтерьера"></a>
           </figure>
-          <button class="button gallery-button gallery-button-back" type="button">Назад</button>
-          <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+          <description>
+            <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+            <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+          </description>
         </div>
       </section>
     </div>
@@ -108,20 +110,20 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <ul>
             <li class="appointment-item">
-              <label for="appointment-date">Дата</label>
-              <input id="appointment-date" type="text" name="date" value="" placeholder="21.21.2019">
+              <label for="date">Дата</label>
+              <input id="date" type="text" name="date" value="" placeholder="21.21.2019">
             </li>
             <li class="appointment-item">
-              <label for="appointment-time">Время</label>
-              <input id="appointment-time" type="text" name="time" value="" placeholder="12:00">
+              <label for="time">Время</label>
+              <input id="time" type="text" name="time" value="" placeholder="12:00">
             </li>
             <li class="appointment-item">
-              <label for="appointment-name">Ваше имя</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Иван Иванович">
+              <label for="name">Ваше имя</label>
+              <input id="name" type="text" name="name" value="" placeholder="Иван Иванович">
             </li>
             <li class="appointment-item">
-              <label for="appointment-phone">Телефон</label>
-              <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+              <label for="phone">Телефон</label>
+              <input id="phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
             </li>
           </ul>
           <button class="button" type="submit" name="send">Отправить</button>
@@ -183,7 +185,7 @@
       </ul>
       <p class="login-password-info">
         <label class="login-checkbox">
-          <input class="visually-hidden" type="checkbox" name="save" checked>
+          <input class="visually-hidden modal-login-remember" type="checkbox" name="save" checked>
           <span class="checkbox-indicator"></span>
           <span class="remember-me">Запомните меня</span>
         </label>
@@ -194,8 +196,6 @@
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-
-  
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <a name="wide-map">
