@@ -609,7 +609,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 20px;
 
- 
+
   height: 5px;
 
   background-color: #ffffff;
@@ -1043,7 +1043,6 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
 }
 
 .product-photos ul {
@@ -1104,13 +1103,11 @@ input[type="radio"].visually-hidden {
   color: #aeaeae;
 }
 
-
 .social-button li {
   list-style: none;
 }
 
 /*modal*/
-
 
 .modal {
   position: fixed;
@@ -1135,7 +1132,7 @@ input[type="radio"].visually-hidden {
   width: 300px;
   padding: 50px 80px;
   margin-left: -230px;
-  
+
 /*  display: none;*/
 }
 
@@ -1165,7 +1162,7 @@ input[type="radio"].visually-hidden {
   background: rgba(0, 0, 0, 0.8);
 
   z-index: 1;
-  
+
   display: none;
 }
 
@@ -1290,7 +1287,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  
+
   margin: 0;
   margin-bottom: 10px;
 }
@@ -1325,7 +1322,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   top: 5px;
   left: 1px;
-  
+
   margin-right: 10px;
 
   border: 2px solid black;
@@ -1382,14 +1379,14 @@ input[type="radio"].visually-hidden {
 
 .inner-content h2 {
   margin: 60px 0 30px 0;
-  
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .inner-content h3 {
   margin: 60px 0 30px 0;
-  
+
   font-size: 20px;
   line-height: 24px;
 }
@@ -1423,10 +1420,10 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   justify-content: space-between;
-  
+
   margin-top: 55px;
   margin-bottom: 65px;
-  
+
   font-size: 48px;
   line-height: 60px;
 }
@@ -1434,18 +1431,18 @@ input[type="radio"].visually-hidden {
 .big-heading::before,
 .big-heading::after {
   content: "";
-  
+
   -webkit-box-flex: 1;
-  
+
   -ms-flex-positive: 1;
-  
+
   flex-grow: 1;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  
+
   width: 20px;
   height: 4px;
-  
+
   background-color: #000000;
 }
 
@@ -1460,7 +1457,7 @@ input[type="radio"].visually-hidden {
 .inner-content .list-1 {
   margin: 14px 0;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -1476,9 +1473,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 8px;
   height: 8px;
-  
+
   vertical-align: baseline;
-  
+
   background-color: #000000;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1505,7 +1502,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  
+
   margin: 60px 0;
 }
 
