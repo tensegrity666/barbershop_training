@@ -161,11 +161,11 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 
   opacity: 0.3;
+  z-index: 1;
 }
 
 .login-link:hover::before,
-.login-link:active::before,
-.login-link:focus::before {
+.login-link:active::before {
   opacity: 1;
 }
 
@@ -1107,22 +1107,20 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-/*modal*/
+/*modal windows*/
 
 .modal {
   position: fixed;
 
   color: #000000;
-
   background-color: #f8f3f0;
   background-image: url(../img//backgrounds/items-background.jpg);
   background-position: 0 0;
   background-repeat: repeat;
-/*  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
-  z-index: 2;
+  z-index: 10;
 }
 
 .modal-login {
@@ -1133,7 +1131,7 @@ input[type="radio"].visually-hidden {
   padding: 50px 80px;
   margin-left: -230px;
 
-/*  display: none;*/
+  display: none;
 }
 
 .modal-map {
@@ -1159,15 +1157,29 @@ input[type="radio"].visually-hidden {
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.2);
 
-  z-index: 1;
+  z-index: 5;
 
   display: none;
 }
 
-.modal-map-wide img {
-  color: #000000;
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-show {
+  display: block;
 }
 
 .login-form ul {
@@ -1184,24 +1196,13 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 42px;
 }
+.modal-map-wide img {
+  color: #000000;
+}
 
 .modal-description {
   margin: 0;
   margin-bottom: 10px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 0;
-  right: -34px;
-
-  width: 22px;
-  height: 22px;
-
-  background-color: transparent;
-  border: 0;
-
-  cursor: pointer;
 }
 
 .modal-close::before,
