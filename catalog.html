@@ -223,7 +223,7 @@
         <h3 class="visually-hidden">Наш адрес</h3>
         Барбершоп BORODINSKY<br>
         Адрес: Санкт-Петербург, Казанская ул., д. 28<br>
-        <a href="#wide-map">Как нас найти?</a><br>
+        <a href="#" class="js-map-link">Как нас найти?</a><br>
         Телефон: +7(812)111-00-22
       </section>
       <section class="footer-social">
@@ -250,6 +250,52 @@
       </p>
     </div>
   </footer>
+  
+  <!-- Модальные окна -->
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+    <a name="login-popup"></a>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <ul class="login-list">
+        <li>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </li>
+        <li>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        </li>
+      </ul>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input class="visually-hidden modal-login-remember" type="checkbox" name="save" checked>
+          <span class="checkbox-indicator"></span>
+          <span class="remember-me">Запомните меня</span>
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit" name="login-button">Войти</button>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+     
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.3038845091114!2d30.313191411990413!3d59.930162629822846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631039a47d61f%3A0x45d9e0f55dc32968!2z0JrQsNC30LDQvdGB0LrQsNGPINGD0LsuLCAyOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDAzMQ!5e0!3m2!1sru!2sru!4v1564697246601!5m2!1sru!2sru" width="760" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p>
+      <img src="img/content/map.jpg" width="765" height="545" alt="Мы находимся по адресу: Санкт-Петербург, Казанская ул., д. 28">
+    </p>
+    <button class="modal-close js-map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <div class="modal-overlay"></div>
+
+  
+<script src="js/login.js"></script>
+<script src="js/map.js"></script>
+  
 </body>
 
 </html>
