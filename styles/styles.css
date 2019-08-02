@@ -326,9 +326,9 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.button:not([disabled]):hover,
+.button:not([disabled]):focus,
+.button:not([disabled]):active {
   background-color: #663d15;
 }
 
