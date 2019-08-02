@@ -1309,13 +1309,13 @@ input[type="radio"].visually-hidden {
 }
 
 .login-icon-user {
-  background-image: url("/images/icons/user.svg");
+  background-image: url("../images/icons/user.svg");
   background-position: 270px center;
   background-repeat: no-repeat;
 }
 
 .login-icon-password {
-  background-image: url("/images/icons/lock.svg");
+  background-image: url("../images/icons/lock.svg");
   background-position: 270px center;
   background-repeat: no-repeat;
 }
