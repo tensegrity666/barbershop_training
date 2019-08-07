@@ -12,7 +12,7 @@
   <link href="styles/styles.min.css" rel="stylesheet">
 </head>
 
-<body class="inner-page" aria-label="Каталог товаров нашего магазина">
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation" aria-label="Навигация по сайту">
       <div class="container">
@@ -249,7 +249,6 @@
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
-    <a name="login-popup"></a>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <ul class="login-list">
         <li>
@@ -258,7 +257,7 @@
         </li>
         <li>
           <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
         </li>
       </ul>
       <p class="login-password-info">
@@ -277,7 +276,7 @@
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.3038845091114!2d30.313191411990413!3d59.930162629822846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631039a47d61f%3A0x45d9e0f55dc32968!2z0JrQsNC30LDQvdGB0LrQsNGPINGD0LsuLCAyOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDAzMQ!5e0!3m2!1sru!2sru!4v1564697246601!5m2!1sru!2sru" width="765" height="573" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.3038845091114!2d30.313191411990413!3d59.930162629822846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631039a47d61f%3A0x45d9e0f55dc32968!2z0JrQsNC30LDQvdGB0LrQsNGPINGD0LsuLCAyOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDAzMQ!5e0!3m2!1sru!2sru!4v1564697246601!5m2!1sru!2sru" width="765" height="573" style="border:0" allowfullscreen></iframe>
     <p>
       <img src="images/content/map.jpg" width="765" height="559" alt="Мы находимся по адресу: Санкт-Петербург, Казанская ул., д. 28">
     </p>
